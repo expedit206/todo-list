@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;outline: none;
+}
+body{
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: rgb(5, 77, 141);
+    text-decoration: underline overline;
+}
+#app{
+    /* background-color: red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    border: 5px rgb(5, 77, 141) solid;
+    padding: 2rem;
+
+}
+.options{
+    height: 100%;
+    text-align: end;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: end;
+    gap: .5rem;
+}
+.taches{
+    /* background-color: red; */
+    width: 100%;
+    padding: 1rem;
+
+}
+#input{
+    padding: 0.5rem;
+    border-radius: 15px;
+    box-shadow:inset 0px 5px 5px 5px rgb(137, 190, 235);
+    width: 100%;
+    font-size: 1.3rem;
+}
+.taches>div{
+    border: 2px black solid;
+    height: 4;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem ;
+    border-radius: 15px;
+    box-shadow:inset 0px 0px 15px 7px rgb(137, 190, 235);
+    width: 100%;
+    
+}
+.taches>div>input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    /* background: rgba(0, 0, 0, 0.199); */
+    height: 115%;
+    display: grid;
+    align-items: center;
+    position: relative;  
+    border: none;
+    background:transparent;
+    /* padding-bottom: .3rem   ; */
+    
+}
+.taches>div>input:hover{
+
+}
+input[type="checkbox"]{
+    height: 100%;
+    width: 30px;
+}
+input[type="checkbox"]:hover,
+img:hover{
+    cursor: pointer;
+}
+.taches {
+     display: grid;
+grid-template-columns: 1fr ;
+gap: .5rem;
+}
+.ok{
+    /* display: none; */
+    font-size: 1.8rem;
+    text-align: center;
+    visibility: hidden;
+}
+span{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.add{
+    display: grid;
+    grid-template-columns:80% 20%;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(1, 69, 129);
+}
+.taches:hover>div::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 14, 22, 0.096);
+}
+div{
+    position: relative;
+}
